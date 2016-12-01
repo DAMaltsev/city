@@ -1,0 +1,204 @@
+body{
+    padding:0;
+    margin:0;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav,
+.item,
+.main-nav
+{
+    display: flex;
+}
+
+
+
+.nav {
+    flex-direction: row;
+    align-items:center;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto
+}
+
+.item {
+    list-style: none;
+    padding: 10px 12px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:cornflowerblue
+}
+
+a:hover{
+    color:aquamarine;
+}
+
+a:visited {
+    color:lightcyan;
+}
+
+ul{
+    padding: 0;
+    
+}
+
+.sect img{
+    width: 300px;
+    border-radius: 100%;
+    margin:auto;
+    vertical-align: middle;
+    
+    display: block;
+}
+
+.sect {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background: #46D3E9;
+}
+
+.in {
+    text-align: center;
+    color: white;
+}
+
+#logo {
+    color: #009;
+}
+
+section {
+    width:80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.chapter3 {
+    flex-grow: 1.5;
+}
+
+.chapter1 {
+    flex-grow: 1.4;
+}
+
+h3{
+    text-align: center;
+}
+
+.chapter1,
+.chapter2,
+.chapter3{
+   margin:0.5em;
+}
+
+.link a {
+    color:white;
+    font-size: 1em;
+}
+
+.link a:hover{
+    color:#4190DF;
+}
+
+.link {
+    padding: 1em;
+    margin-top: auto;
+    background: #46D3E9;
+    text-align: center;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+
+footer {
+    text-align: center;
+    flex:1;
+    background: lightgrey;
+    margin-top: 0.5em;
+}
+
+footer a{
+    color:black;
+    text-transform: none;
+}
+
+footer a:hover {
+    color:grey;
+}
+
+/***************
+MEDIA QUERY
+***************/
+
+@media (max-width:800px){
+    
+    section {
+        flex-direction: column;
+    }
+    
+    .nav,
+    .item, 
+    .main-nav,
+    .col{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main-nav {
+        flex-direction: row;
+    }
+    
+    .col {
+        flex:1 50%;
+    }
+
+}
+
+@media (max-width:1000px){
+    
+    section {
+        flex-direction: column;
+    }
+    
+    .nav,
+    .item, 
+    .main-nav,
+   {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main-nav {
+        flex-direction: row;
+    }
+    
+
+    
+
+}
+
+.chapter3 img{
+    border-radius: 5px;    
+}
+
+.chapter2 {
+    flex-wrap: wrap;
+    order:1;
+}
+
+
+
+
+
